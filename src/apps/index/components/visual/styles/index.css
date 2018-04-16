@@ -1,19 +1,23 @@
-body {
-  background: #fff;
-}
+ 
+@import './iconfont.css';
 .visual-container {
   margin-top: -60px;
-  .sub-nav{
+  background: #fff;
+  .sub-header-wrap{
     width: 100%;
-    background-color: #F8F8F8;
+    background-color: #31353a;
     border-bottom: 1px solid #e1e1e1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 24px 0;
-    display: flex;
-    justify-content: space-around;
-    a{
-     
+    margin-bottom: 20px;
+    .sub-header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-start;
+      .view-mode {
+        display: flex;
+        justify-content: flex-end;
+        width: 400px;
+      }
     }
   }
 }

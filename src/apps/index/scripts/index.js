@@ -1,22 +1,24 @@
  
+import $ from 'jquery'
 import Home from '../components/home'
 import Visual from '../components/visual'
 
 export default class Index {
   constructor() {
-    this.home = new Home('.main')
-    this.visual = new Visual('.main')
+    this.home = new Home('.home-container')
+    this.visual = new Visual('.visual-container')
   }
 
-  renderHome() {
-    this.home.render()
-  }
-
-  renderVisual() {
-    this.visual.render()
+  bindEvent() {
+    $('.header-nav').on('click', 'a', (evt) => {
+      let index = $(evt.target).index()
+      $('.container-warp').fadeOut()
+      $('.main').find('.container-warp').eq(index).fadeIn()
+    })
   }
 
   render() {
-    this.renderVisual()
+    this.home.render()
+    this.bindEvent()
   }
 }

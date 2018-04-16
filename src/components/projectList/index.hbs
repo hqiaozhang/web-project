@@ -1,0 +1,40 @@
+{{#each this}}
+  {{#compare type '===' 1}}
+    <a href="#">
+      <div class="scenes prod-image-left background-wirte">
+        <div class="container"> 
+            <div class="content"> 
+              <div class="title"> <h1>{{title}}</h1> </div> 
+              <div class="desc"><strong>项目简介: </strong>{{describe}}</div> 
+             
+            </div> 
+            <div class="prod-image-blcok"> 
+              <div class="prod-image image-box-shadow" style="max-width: {{maxWidth}}px"> 
+                <img src="{{imgUrl}}" > 
+              </div> 
+            </div> 
+        </div>
+      </div>  
+    </a>  
+   {{/compare}}
+   {{#compare type '===' 2}}
+    <a href="#">
+      <div class="scenes prod-image-right background-light-gray">
+        <div class="container"> 
+          
+            <div class="content"> 
+              <div class="title"> <h1>{{title}}</h1> </div> 
+              <div class="desc"><strong>项目简介: </strong>{{describe}}</div> 
+             
+            </div> 
+
+            <div class="prod-image-blcok"> 
+              <div class="prod-image image-box-shadow" style="max-width: {{maxWidth}}px"> 
+                <img src="{{imgUrl}}" > 
+              </div> 
+            </div> 
+        </div>
+    </div>  
+  </a>
+  {{/compare}}
+{{/each}}
