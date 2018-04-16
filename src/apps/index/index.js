@@ -6,13 +6,16 @@
  * @Last Modified Time:    2017-12-26 17:21:38
  */
 
+// import '@/loader/common/scripts/modernizr.custom'
 import mockApis from './mock'
 import loader from '@/loader/loader'
-import $ from 'jquery'
- 
+import Index from './scripts'
+import './styles/index.css'
+const index = new Index()
+
 loader.load({
   apis: mockApis, 
   init() {
-    $('body').html('test')
+    index.render()
   }
 })

@@ -25,9 +25,9 @@ export default {
   proxyHost: 'http://192.168.1.199:3000/api',
   // websocket代理服务器域名，当proxy为true时，所有websocket都会连接到这个域名,主要用于前后台联调
   websocketProxyHost: 'ws://offline.com',
-  // 是否使用zoom模式，在zoom模式下页面会根据窗口的宽高使用transform调整
-  mapHost: 'http://192.168.1.16:10088/mapdata/cq',
   // 地图路径
+  mapHost: 'http://192.168.1.16:10088/mapdata/cq',
+  // 是否使用zoom模式，在zoom模式下页面会根据窗口的宽高使用transform调整
   zoom: false,
   // 固定的页面宽
   pageWidth: 1920,

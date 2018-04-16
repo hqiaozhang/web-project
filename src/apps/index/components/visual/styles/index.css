@@ -1,0 +1,19 @@
+body {
+  background: #fff;
+}
+.visual-container {
+  margin-top: -60px;
+  .sub-nav{
+    width: 100%;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #e1e1e1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px 0;
+    display: flex;
+    justify-content: space-around;
+    a{
+     
+    }
+  }
+}
