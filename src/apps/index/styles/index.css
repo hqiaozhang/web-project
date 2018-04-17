@@ -2,6 +2,7 @@
 
 body{
 	font-family: '微软雅黑';
+	background: url(../images/bg3.jpg) fixed no-repeat top center;
 }
 
 .container{
@@ -57,8 +58,10 @@ body{
 .container-warp {
 	display: none;
 }
-.home-container {
+.visual-container {
 	display: block;
+	width: 100%;
+    position: relative;
 }
 
 @-webkit-keyframes slideOutUp {

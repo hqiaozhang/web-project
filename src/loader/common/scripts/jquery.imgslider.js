@@ -1,10 +1,6 @@
 
-
-import jQuery from './jquery'
- 
-
 ;( function( $, window, undefined ) {
-
+	
 	'use strict';
 
 	// blank image data-uri bypasses webkit log warning (thx doug jones)
@@ -158,8 +154,6 @@ import jQuery from './jquery'
 	// global
 	var $window				= $( window ),
 		Modernizr			= window.Modernizr;
-	
- 
 
 	$.ImgSlider				= function( options, element ) {
 		
@@ -178,7 +172,7 @@ import jQuery from './jquery'
 	};
 
 	$.ImgSlider.defaults	= {
-		autoplay	: true,
+		autoplay	: false,
 		interval	: 6000
 	};
 
@@ -199,7 +193,6 @@ import jQuery from './jquery'
 				'msTransition'		: 'MSTransitionEnd',
 				'transition'		: 'transitionend'
 			};
-	 
 			this.transEndEventName	= transEndEventNames[ Modernizr.prefixed('transition') ];
 
 			// the initial elements
@@ -255,7 +248,7 @@ import jQuery from './jquery'
 
 			// resize images
 			this._resizeBlocks();
-		
+
 			// add navigation if needed
 			if( this.initElemsCount > 3 ) {
 

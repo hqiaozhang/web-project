@@ -1,7 +1,6 @@
 <div class="sub-nav">
-  <a href="#" class="active">全部</a>
-  <a href="#">技侦</a>
-  <a href="#">刑侦</a>
-  <a href="#">情报</a>
-  <a href="#">其他</a>
+  <a href="#" class="active" type="all">全部</a>
+  {{#each this}}
+    <a href="#" type={{key}}>{{name}}</a>
+  {{/each}}
 </div>  
