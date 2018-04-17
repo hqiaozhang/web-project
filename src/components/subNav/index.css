@@ -26,6 +26,6 @@
     transition: color ease .3s;
   }
   a.active {
-    color: #fc7256;
+    color: #00c1de
   }
 }

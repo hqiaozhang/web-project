@@ -19,6 +19,7 @@ export default class Index {
 
   render() {
     this.home.render()
+    this.visual.render()
     this.bindEvent()
   }
 }

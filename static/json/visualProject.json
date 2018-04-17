@@ -1,88 +1,100 @@
-[
-  {
-    "imgUrl": "static/images/project/zfba.jpg",
-    "className": "background-wirte",
-    "describe": "该项目用于重庆市公安局技侦总队（执法支队）“执法办案可视化展示”，系统主要有6 个页面，主界面、源头控制、过程监督、模型分析、可视化分析、事后监督。该项目用于重庆市公安局技侦总队（执法支队）“执法办案可视化展示”，系统主要有6 个页面，主界面、源头控制、过程监督、模型分析、可视化分析、事后监督。",
-    "title": "大数据执法办案平台",
-    "type": 1,
-    "maxWidth": 340
-  },
-  {
-    "imgUrl": "static/images/project/dtgk.jpg",
-    "className": "background-light-gray",
-    "describe": "该项目用于重庆市公安局技侦总队（执法支队）“执法办案可视化展示”，系统主要有6 个页面，主界面、源头控制、过程监督、模型分析、可视化分析、事后监督。该项目用于重庆市公安局技侦总队（执法支队）“执法办案可视化展示”，系统主要有6 个页面，主界面、源头控制、过程监督、模型分析、可视化分析、事后监督。",
-    "title": "技侦动态管控大数据",
-    "type": 2,
-    "maxWidth": 450
-  },{
-    "imgUrl": "static/images/project/zhpc.jpg",
-    "className": "background-wirte",
-    "describe": "",
-    "title": "技侦指挥PC",
-    "type": 1,
-    "maxWidth": 400
-  },{
-    "imgUrl": "static/images/project/whgajy.jpg",
-    "className": "background-wirte",
-    "describe": "",
-    "title": "武汉公安教育训练大数据",
-    "type": 2,
-    "maxWidth": 400
-  },{
-    "imgUrl": "static/images/project/tykt.jpg",
-    "className": "background-wirte",
-    "describe": "",
-    "title": "天眼课题",
-    "type": 1,
-    "maxWidth": 520
-  },{
-    "imgUrl": "static/images/project/cqzhc.jpg",
-    "className": "background-wirte",
-    "describe": "",
-    "title": "重庆市公安警务指挥舱",
-    "type": 2,
-    "maxWidth": 380
-  },{
-    "imgUrl": "static/images/project/zfba.jpg",
-    "className": "background-wirte",
-    "describe": "",
-    "title": "重庆刑侦",
-    "type": 1,
-    "maxWidth": 380
-  },{
-    "imgUrl": "static/images/project/hyldt.jpg",
-    "className": "background-wirte",
-    "describe": "",
-    "title": "汉阳",
-    "type": 2,
-    "maxWidth": 380
-  },{
-    "imgUrl": "static/images/project/zfba.jpg",
-    "className": "background-wirte",
-    "describe": "",
-    "title": "迪爱斯",
-    "type": 1,
-    "maxWidth": 380
-  },{
-    "imgUrl": "static/images/project/zfba.jpg",
-    "className": "background-wirte",
-    "describe": "",
-    "title": "警务云",
-    "type": 2,
-    "maxWidth": 380
-  },{
-    "imgUrl": "static/images/project/tjqbq.jpg",
-    "className": "background-wirte",
-    "describe": "",
-    "title": "情报态势感知墙",
-    "type": 1,
-    "maxWidth": 380
-  },{
-    "imgUrl": "static/images/project/flgaxt.jpg",
-    "className": "background-wirte",
-    "describe": "",
-    "title": "涪陵可视化",
-    "type": 2,
-    "maxWidth": 380
-  }
-]
+{
+  "jizhen": [
+    {
+      "imgUrl": "static/images/project/zfba.jpg",
+      "className": "background-wirte",
+      "describe": "该项目用于重庆市公安局技侦总队（执法支队）“执法办案可视化展示”，系统主要有6 个页面，主界面、源头控制、过程监督、模型分析、可视化分析、事后监督。该项目用于重庆市公安局技侦总队（执法支队）“执法办案可视化展示”，系统主要有6 个页面，主界面、源头控制、过程监督、模型分析、可视化分析、事后监督。",
+      "title": "大数据执法办案平台",
+      "type": 1,
+      "maxWidth": 340
+    },
+    {
+      "imgUrl": "static/images/project/dtgk.jpg",
+      "className": "background-light-gray",
+      "describe": "该项目用于重庆市公安局技侦总队（执法支队）“执法办案可视化展示”，系统主要有6 个页面，主界面、源头控制、过程监督、模型分析、可视化分析、事后监督。该项目用于重庆市公安局技侦总队（执法支队）“执法办案可视化展示”，系统主要有6 个页面，主界面、源头控制、过程监督、模型分析、可视化分析、事后监督。",
+      "title": "技侦动态管控大数据",
+      "type": 2,
+      "maxWidth": 450
+    },{
+      "imgUrl": "static/images/project/zhpc.jpg",
+      "className": "background-wirte",
+      "describe": "",
+      "title": "技侦指挥PC",
+      "type": 1,
+      "maxWidth": 400
+    }
+  ],
+  "xingzheng": [
+    {
+      "imgUrl": "static/images/project/zfba.jpg",
+      "className": "background-wirte",
+      "describe": "",
+      "title": "重庆刑侦",
+      "type": 1,
+      "maxWidth": 380
+    }
+  ],
+  "qingbao": [
+    {
+      "imgUrl": "static/images/project/tjqbq.jpg",
+      "className": "background-wirte",
+      "describe": "",
+      "title": "情报态势感知墙",
+      "type": 1,
+      "maxWidth": 380
+    }
+  ],
+  "other": [
+    {
+      "imgUrl": "static/images/project/whgajy.jpg",
+      "className": "background-wirte",
+      "describe": "",
+      "title": "武汉公安教育训练大数据",
+      "type": 2,
+      "maxWidth": 400
+    },{
+      "imgUrl": "static/images/project/tykt.jpg",
+      "className": "background-wirte",
+      "describe": "",
+      "title": "天眼课题",
+      "type": 1,
+      "maxWidth": 520
+    },{
+      "imgUrl": "static/images/project/cqzhc.jpg",
+      "className": "background-wirte",
+      "describe": "",
+      "title": "重庆市公安警务指挥舱",
+      "type": 2,
+      "maxWidth": 380
+    },{
+      "imgUrl": "static/images/project/hyldt.jpg",
+      "className": "background-wirte",
+      "describe": "",
+      "title": "汉阳",
+      "type": 2,
+      "maxWidth": 380
+    },{
+      "imgUrl": "static/images/project/zfba.jpg",
+      "className": "background-wirte",
+      "describe": "",
+      "title": "迪爱斯热词",
+      "type": 1,
+      "maxWidth": 380
+    },{
+      "imgUrl": "static/images/project/zfba.jpg",
+      "className": "background-wirte",
+      "describe": "",
+      "title": "警务云",
+      "type": 2,
+      "maxWidth": 380
+    },{
+      "imgUrl": "static/images/project/flgaxt.jpg",
+      "className": "background-wirte",
+      "describe": "",
+      "title": "涪陵可视化",
+      "type": 2,
+      "maxWidth": 380
+    }
+  ]
+}
+ 
