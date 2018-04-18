@@ -20,7 +20,7 @@ window.global = {
   // WsBaseUrl: 'ws://192.168.2.117:8080/jizhen-pc/',
   //  BaseUrl :"http://192.168.1.244:8082/jizhen-pc/",
   // WsBaseUrl: 'ws://192.168.1.244:8082/jizhen-pc/',
-   mapPath: '../../data',
+  mapPath: 'http://www.xqiao.cc',
 
   VICTORY: 'investigation/pageNictory',
   ONDUTY: 'onduty'
