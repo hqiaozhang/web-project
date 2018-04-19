@@ -1,5 +1,5 @@
  
-@import './iconfont.css';
+
 .visual-container {
   margin-top: -60px;
   background: #fff;
@@ -17,7 +17,6 @@
         display: flex;
         justify-content: flex-end;
         width: 400px;
-         
       }
     }
   }

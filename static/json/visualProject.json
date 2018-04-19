@@ -1,20 +1,4 @@
 {
-  "nav": [
-    {
-      "name": "技侦",
-      "key": "jizhen"
-    },{
-      "name": "刑侦",
-      "key": "xingzheng"
-    },{
-      "name": "情报",
-      "key": "qingbao"
-    },{
-      "name": "其他",
-      "key": "other"
-    }
-  ],
-  "data": {
     "jizhen": [
       {
         "imgUrl": "static/images/project/dtgk.jpg",
@@ -98,6 +82,5 @@
       }
     ]
   }
-  
-}
+
  

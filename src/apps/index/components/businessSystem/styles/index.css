@@ -1,0 +1,24 @@
+ 
+
+.business-container {
+  .view-mode {
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    display: flex;
+    margin-top: -55px;
+     text-align: right;
+    i.iconfont {
+      color: #555;
+    }
+    i.active {
+      color: #00c1de;
+    }
+  }
+  .block-project-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: none;
+    margin-top: 55px;
+  }
+}

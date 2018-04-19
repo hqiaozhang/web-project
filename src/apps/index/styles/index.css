@@ -43,13 +43,36 @@ body{
 	margin-right: 30px;
 	color: #fff;
 }
-.header-nav a{
-	margin: 0 20px;
-	color: #fff;
-	padding: 3px 50px 3px 10px;
-	border-right: 1px solid #1f1f28;
-	box-shadow: 1px 0 0 #3f3f40;
-	cursor: pointer;
+.header-nav {
+	a{
+		margin: 0 20px 0 10px;
+		color: #fff;
+		padding: 0 50px 0 10px;
+		position: relative;
+		border-right: 1px solid #1f1f28;
+		box-shadow: 1px 0 0 #3f3f40;
+		height: 45px;
+		line-height: 45px;
+		display: block;
+		float: left;
+		cursor: pointer;
+		transition: all 1s;
+		&::after {
+			content: '';
+			border-bottom: 2px solid transparent;
+			position: absolute;
+			bottom: -4px;
+			width: 80%;
+			right: 133px;
+			transition: right 1s;
+		}
+	}
+	a.active {
+		&::after {
+			border-bottom: 2px solid #00c1de;
+			right: 30px;
+		}
+	}
 }
 .header-nav a:last-child {
 	border: none;
