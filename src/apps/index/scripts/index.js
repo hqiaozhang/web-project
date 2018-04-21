@@ -13,7 +13,7 @@ export default class Index {
     this.businessSystem = new BusinessSystem('.business-container')
     let menuHmtl = ''
     menu.topMenu.map(item => {
-      menuHmtl += `<a>${item.name}</a>`
+      menuHmtl += `<a href=${ !item.href ? '#' : item.href}>${item.name}</a>`
     })
     $('.header-nav').append(menuHmtl)
     $('.header-nav a').eq(0).addClass('active')

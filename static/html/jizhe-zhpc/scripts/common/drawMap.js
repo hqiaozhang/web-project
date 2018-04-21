@@ -15,7 +15,8 @@ define(function(require) {
   require('topojson')
   var _request = require('./request.js')  
   var thisIndex = ''
-  var mapPath = window.global.mapPath
+  var mapPath0 = window.global.mapPath
+  var mapPath = '../data'
  
   //配置项
   var svg = null
@@ -43,7 +44,7 @@ define(function(require) {
   var mainValue = 0 //主城区总数
   var mainXjValue = 0 //人员在勤主城区休假
   var mainZqValue = 0 //人员在勤主城区在勤
-  var mergeUrl = mapPath+'/map/mergeMap0.json'
+  var mergeUrl = mapPath0+'/map/mergeMap0.json'
   var backsecondMap = false //返回二级地图
   var secondData = []   //二级地图数据（某支队）
   window.citySecondMap = false //行政区
@@ -295,7 +296,7 @@ function indexOf(arr, str){
      // console.log('地图初始化', window.isMapInit)
       //地图如果是初始化加载调用所有支队数据mergeMap0.json
       if(type==0){
-        window.mapUrl = mapPath+'/map/'+cfg.area+'.json' 
+        window.mapUrl = mapPath0+'/map/'+cfg.area+'.json' 
       }
       if(window.isMapInit){
          areaIdFlag = -1
@@ -306,7 +307,7 @@ function indexOf(arr, str){
           zdX = 0
           zdY = 0
           zdScale = 1
-          mergeUrl = mapPath+'/map/mergeMap0.json'
+          mergeUrl = mapPath0+'/map/mergeMap0.json'
         }
         
         //这里是请求本地的所有支队数据
@@ -520,7 +521,7 @@ function indexOf(arr, str){
                             cityMainThree = true
                             $('.back').attr('id', 'cityMainBack')
                           }
-                          window.mapUrl = mapPath+'/map/fenju/'+areaId+'.json' 
+                          window.mapUrl = mapPath0+'/map/fenju/'+areaId+'.json' 
                           //请求地址
                           var dataUrl =  _self.commonUrl()
    
@@ -572,7 +573,7 @@ function indexOf(arr, str){
                             window.citySecondMap = true
                             window.secondMap = true
                             cityMainMap = true
-                            window.mapUrl = mapPath+'/map/fenju/222222.json' 
+                            window.mapUrl = mapPath0+'/map/fenju/222222.json' 
                             //主城区用mina标记
                             window.troopsId = 'main'
 
@@ -1009,7 +1010,7 @@ function indexOf(arr, str){
              //window.isMainCity 判断主城
              //console.log('是否主城区', window.isMainCity)
              if(window.isMainCity){
-                var mergeUrl = mapPath+'/map/mergeMap1.json'
+                var mergeUrl = mapPath0+'/map/mergeMap1.json'
                 _request.sendAjax(mergeUrl, function(res){
                   var mainData = res.result
                   mergeData(mainData)
@@ -2089,9 +2090,9 @@ function indexOf(arr, str){
         window.secondMap = false
         window.troopsId = 0
         if(cityMainMap){
-          window.mapUrl = mapPath+'/map/fenju/222222.json'  
+          window.mapUrl = mapPath0+'/map/fenju/222222.json'  
         }else{
-          window.mapUrl = mapPath+'/map/'+cfg.area+'.json'  
+          window.mapUrl = mapPath0+'/map/'+cfg.area+'.json'  
           $(this).hide()
         }
       window.troopsId = 0
@@ -2115,7 +2116,7 @@ function indexOf(arr, str){
          d3.select('.map').selectAll('path').style('opacity', 0.1)
         cityMainThree = false
         window.troopsId = 'main'
-        window.mapUrl = mapPath+'/map/fenju/222222.json'  
+        window.mapUrl = mapPath0+'/map/fenju/222222.json'  
         //请求地址
         var dataUrl =  _self.commonUrl()
         _index.getMap(dataUrl[0])
@@ -2183,18 +2184,18 @@ function indexOf(arr, str){
           zdY = 0
           zdScale = 1
         }else{
-          window.mapUrl = mapPath+'/map/'+cfg.area+'.json' 
+          window.mapUrl = mapPath0+'/map/'+cfg.area+'.json' 
         }
         
         //三级地图
         if(threeMap){
           threeMap = false
-          mergeUrl = mapPath+'/map/mergeMap1.json'
+          mergeUrl = mapPath0+'/map/mergeMap1.json'
           zdX = -1000
           zdY = -2650
           zdScale = 4
         }else{
-          mergeUrl = mapPath+'/map/mergeMap0.json'
+          mergeUrl = mapPath0+'/map/mergeMap0.json'
           d3.select('.back').style('display', 'none')
         }
 
@@ -2202,9 +2203,9 @@ function indexOf(arr, str){
          var dataUrl =  _self.commonUrl()
         
         //测试数据
-         // var map = mapPath+'/mergeMap.json'
-         // var caseNumber = mapPath+'/caseNumber.json'
-         // var dataUrl = [map, caseNumber]
+         var map = mapPath+'/mergeMap.json'
+         var caseNumber = mapPath+'/caseNumber.json'
+         var dataUrl = [map, caseNumber]
 
         _index.getMap(dataUrl[0])
         _index.getCaseNumber(dataUrl[1])
@@ -2305,8 +2306,8 @@ function indexOf(arr, str){
           var commonUrl = '/troopsId/' + window.troopsId2
           var MAPURL = window.BASEURL + 'personnelFrequently/map' + commonUrl
           var CASENUMBERURL = window.BASEURL + 'personnelFrequently/attendanceNumber' + commonUrl
-          // var MAPURL = mapPath +'/person-mergeMap2.json'
-          // var CASENUMBERURL = mapPath +'/person-caseNumber2.json'
+          var MAPURL = mapPath +'/person-mergeMap2.json'
+          var CASENUMBERURL = mapPath +'/person-caseNumber2.json'
         break;
         case 2:
           var commonUrl = '/troopsId/' + window.troopsId
@@ -2314,8 +2315,8 @@ function indexOf(arr, str){
           var CASENUMBERURL = window.BASEURL + 'telecomResources/controlNumber' + commonUrl
       }
 
-      // var MAPURL = mapPath +'/map2.json'
-      // var CASENUMBERURL = mapPath +'/city-caseNumber.json'
+      var MAPURL = mapPath +'/map2.json'
+      var CASENUMBERURL = mapPath +'/city-caseNumber.json'
 		
       var dataUrls = [MAPURL, CASENUMBERURL]
       

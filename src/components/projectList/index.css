@@ -1,9 +1,7 @@
 .list-project-wrap {
-  a {
+  .scenes {
     &:nth-of-type(odd) {
-      .scenes {
-        background-color: #fff;
-      }
+      background-color: #fff;
       .content {
         padding-left: 12px;
         margin-top: 8px;
@@ -11,9 +9,7 @@
       }
     }
     &:nth-of-type(even) {
-      .scenes {
-        background-color: #f8f8f8;
-      }
+      background-color: #f8f8f8;
       .content {
         float: left;
         padding-left: 12%;
@@ -25,6 +21,7 @@
       }
     }
   }
+    
 }
 
 .scenes {
@@ -72,8 +69,9 @@
     width: 100%;
     max-width: 230px;
     margin: 0 auto;
+    cursor: pointer;
   }
-  .prod-image>img {
+  .prod-image a>img {
     width: 100%;
     display: block;
   }
@@ -89,4 +87,12 @@
   -webkit-box-shadow: 0 2px 4px 0 #d2d2d2;
   -moz-box-shadow: 0 2px 4px 0 #d2d2d2;
   box-shadow: 0 2px 4px 0 #d2d2d2;
+  transition: all 1s;
+  &:hover {
+    transition: all 1s;
+    -webkit-box-shadow: 2px 2px 8px 0 #6272b9;
+    -moz-box-shadow: 2px 2px 8px 0 #6272b9;
+    box-shadow: 2px 2px 8px 0 #6272b9;
+    transform: scale(1.1);
+  }
 }

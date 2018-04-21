@@ -24,8 +24,11 @@
     -moz-transition: color false false false,ease false false false,.3s false false false;
     -o-transition: color false false false,ease false false false,.3s false false false;
     transition: color ease .3s;
+    &:hover {
+      color: #00c1de;
+    }
   }
   a.active {
-    color: #00c1de
+    color: #00c1de;
   }
 }

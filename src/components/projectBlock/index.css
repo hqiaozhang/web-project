@@ -11,17 +11,22 @@
     background-color: #fff;
     border: 1px solid #c5d8db;
     // height: 230px;
+    transition: all .5s ease;
+    &:hover {
+      -webkit-box-shadow: 2px 2px 4px 0 #d2d2d2;
+      -moz-box-shadow: 2px 2px 4px 0 #d2d2d2;
+      box-shadow: 2px 2px 4px 0 #d2d2d2;
+     
+      transition: all .5s ease;
+      transform: scale(1.04);
+    }
     .img-area {
       width: 100%;
       overflow: hidden;
       height: 190px;
       img {
-        transition: all .5s ease;
         width: 100%;
         height: 100%;
-        &:hover {
-          transition: all .5s ease;
-        }
       }
     }
     .box-header {

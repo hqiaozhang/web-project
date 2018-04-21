@@ -1,5 +1,4 @@
 {{#each this}}
-   <a href={{href}} target="_blank">
       <div class="scenes">
         <div class="container"> 
             <div class="content"> 
@@ -8,10 +7,10 @@
             </div> 
             <div class="prod-image-blcok"> 
               <div class="prod-image image-box-shadow" style="max-width: {{maxWidth}}px"> 
-                <img src="{{imgUrl}}" > 
+                <a href={{href}} target="_blank"><img src="{{imgUrl}}" > </a>
               </div> 
             </div> 
         </div>
       </div>  
-    </a>  
+ 
 {{/each}}

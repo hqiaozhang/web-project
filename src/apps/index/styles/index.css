@@ -57,6 +57,9 @@ body{
 		float: left;
 		cursor: pointer;
 		transition: all 1s;
+		&:hover {
+			 color: #00c1de;
+		}
 		&::after {
 			content: '';
 			border-bottom: 2px solid transparent;
@@ -81,10 +84,10 @@ body{
 .container-warp {
 	display: none;
 }
-.visual-container {
+.home-container {
 	display: block;
 	width: 100%;
-    position: relative;
+  position: relative;
 }
 
 @-webkit-keyframes slideOutUp {
