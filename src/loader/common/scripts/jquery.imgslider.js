@@ -172,7 +172,7 @@
 	};
 
 	$.ImgSlider.defaults	= {
-		autoplay	: false,
+		autoplay	: true,
 		interval	: 6000
 	};
 
